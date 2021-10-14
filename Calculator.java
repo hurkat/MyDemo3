@@ -1,21 +1,25 @@
-import java.util.Scanner;
 
 public class Calculator {
 	public static void main(String[] args) {
-		Scanner sc = new Scanner(System.in);
 		int count = 0, result = 0;
-		System.out.print("Enter number 1 : ");
-		int a = sc.nextInt();
-		System.out.print("Enter number 2 : ");
-		int b = sc.nextInt();
-		System.out.println("1. Add");
-		System.out.println("2. Sub");
-		System.out.println("3. Mult");
-		System.out.println("4. Div");
-		System.out.print("Enter choice : ");
-		int ch = sc.nextInt();
-		switch (ch) {
-		// case 1:
+		int a=Integer.parseInt(args[0]);
+		int b=Integer.parseInt(args[1]);
+		int c=Integer.parseInt(args[2]);
+		int res;
+		switch (c) {
+			case 1: 
+				CalcAdd obj=new CalcAdd();
+				res=obj.add(a, b);
+				break;
+			case 2: 
+				CalcSub obj=new CalcSub();
+				res=obj.sub(a, b);
+				break;
+			case 3: 
+				CalcDivide obj=new CalcDivide();
+				res=obj.divide(a, b);
+				break;
+				
 		}
 
 	}
