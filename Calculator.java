@@ -12,12 +12,12 @@ public class Calculator {
 				res=obj.add(a, b);
 				break;
 			case 2: 
-				CalcSub obj=new CalcSub();
-				res=obj.sub(a, b);
+				CalcSub obj2=new CalcSub();
+				res=obj2.sub(a, b);
 				break;
 			case 3: 
-				CalcDiv obj=new CalcDiv();
-				res=obj.divide(a, b);
+				CalcDivide obj3=new CalcDivide();
+				res=obj3.divide(a, b);
 				break;
 				
 		}
