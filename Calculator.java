@@ -16,7 +16,7 @@ public class Calculator {
 				res=obj2.sub(a, b);
 				break;
 			case 3: 
-				CalcDivide obj3=new CalcDivide();
+				CalcDiv obj3=new CalcDiv();
 				res=obj3.divide(a, b);
 				break;
 				
