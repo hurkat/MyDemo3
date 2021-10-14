@@ -5,6 +5,8 @@ public class CalcDiv {
             return result;
         } catch(ArithmeticException e) {
             System.out.println("Divide by zero error occurred");
+        } finally {
+            return -1;
         }
     }
 }
